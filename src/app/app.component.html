@@ -1,3 +1,24 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+
+  
+  <ion-menu side="start" menuId="custom" class="my-custom-menu">
+    <ion-header>
+      <ion-toolbar color="tertiary">
+        <ion-title>Custom Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item>ORDER ONLINE</ion-item>
+        <ion-item>GALLERY</ion-item>
+        <ion-item>OPENING TIMES</ion-item>
+        <ion-item>FIND US</ion-item>
+        <ion-item>ABOUT US </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  
+
+  
+  <ion-router-outlet main></ion-router-outlet>
 </ion-app>
