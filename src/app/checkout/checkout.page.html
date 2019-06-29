@@ -5,19 +5,34 @@
     font-size: larger;" slot="start">checkout</ion-label>
     <ion-label slot="end" style="    color: blue;
     margin-right: 15px;
-    font-size: 17px;">cancel</ion-label>
+    font-size: 17px;" (click)="back()">cancel</ion-label>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-<div style="    margin-left: 10px;
+  <div style="    margin-left: 10px;
 margin-top: 55px;">
-  Collection time
-</div>
-<ion-item>
+    Collection time
+  </div>
+  <ion-item>
     <ion-textarea style="line-height: 3" placeholder="Enter more information here..."></ion-textarea>
   </ion-item>
   <div style="padding: 20px">
     leave a note for retaurant to let thm know what you want exactly..
   </div>
+  <ion-button color="primary" style=" width: 97%;
+
+  margin: 30px 7px 0px 5px;height: 45px;--ion-color-base:  var(--ion-color-black, #000) !important"
+    routerLink="/checkout"> Set up <ion-icon name="logo-apple"></ion-icon> Pay</ion-button>
+  <ion-item-divider>
+    <div style="width: 100%; text-align: center;">OR</div>
+  </ion-item-divider>
+  <ion-button color="primary" style=" width: 97%;
+
+  margin: 30px 7px 0px 5px;height: 45px;"
+    routerLink="/checkout"> Pay by card or cash</ion-button>
+    <ion-item lines="none">
+      <p style="    padding: 10px;
+      color: grey;">By continuing apple pay you agree to Our terms and conditions</p>
+    </ion-item>
 </ion-content>
