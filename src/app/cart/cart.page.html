@@ -42,7 +42,7 @@ font-weight: 600;">
   </ion-radio-group>
   <ion-button  color="primary" style=   " width: 97%;
 
-  margin: 30px 7px 0px 5px;height: 45px"> Go to checkout</ion-button>
+  margin: 30px 7px 0px 5px;height: 45px" routerLink="/checkout"> Go to checkout</ion-button>
     <ion-item lines="none" style="margin-top: 10px">
         <ion-icon name="alert" style="color: blue;    font-size: 50px;
                 padding-right: 7px;"></ion-icon>
@@ -55,7 +55,33 @@ font-weight: 600;">
           <ion-item routerLink="/items" lines="none">
             <ion-label>Popular</ion-label>
             
-            <ion-label style="color: blue;" mode="ios" slot="end"></ion-label>
+            <ion-label style="
+            
+                flex: none;
+                border: solid 0.5px grey;
+                width: 26px;
+                height: 24px;
+                text-align: center;" mode="ios" slot="end">1</ion-label>
+            <ion-label slot="end" style="flex: none">$9.95</ion-label>
+           
+            
+          
+          </ion-item>
+          <ion-item routerLink="/items" lines="none">
+            <ion-label style="margin-top: 35px;
+            color: grey;
+            font-size: small;">SUBTOTAL</ion-label>
+          
+            <ion-label slot="end" style="flex: none ;margin-top: 35px;
+            color: grey;
+            font-size: small;">$9.95</ion-label>
+           
+            
+          
+          </ion-item>
+          <ion-item routerLink="/items" lines="none">
+            <ion-label>Total</ion-label>
+            
             <ion-label slot="end" style="flex: none">$9.95</ion-label>
            
             
