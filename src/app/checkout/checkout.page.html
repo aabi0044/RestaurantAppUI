@@ -5,7 +5,7 @@
     font-size: larger;" slot="start">checkout</ion-label>
     <ion-label slot="end" style="    color: blue;
     margin-right: 15px;
-    font-size: 17px;" (click)="back()">cancel</ion-label>
+    font-size: 17px;cursor: pointer" (click)="back()">Cancel</ion-label>
   </ion-toolbar>
 </ion-header>
 
@@ -33,6 +33,6 @@ margin-top: 55px;">
     routerLink="/checkout"> Pay by card or cash</ion-button>
     <ion-item lines="none">
       <p style="    padding: 10px;
-      color: grey;">By continuing apple pay you agree to Our terms and conditions</p>
+      color: grey;">By continuing apple pay you agree to Our <a style="color: blue">Terms and Conditions</a> </p>
     </ion-item>
 </ion-content>
